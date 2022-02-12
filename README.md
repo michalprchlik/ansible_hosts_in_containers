@@ -5,7 +5,7 @@ Project contains 6 container images with `different linux distributions` with pr
 You can use containers with configured `ansible inventory` (ansible hosts) few minutes after: 
 
 ```
-git@github.com:michalprchlik/ansible_hosts_in_containers.git
+git clone git@github.com:michalprchlik/ansible_hosts_in_containers.git
 cd ansible_hosts_in_containers
 make install
 make run
