@@ -13,12 +13,12 @@ install:
 
 run:
 	-podman rm -f localhost/python2_centos7 localhost/python2_opensuse15 localhost/python2_oracle_linux7 localhost/python3_centos8 localhost/python3_ubuntu16 localhost/python3_fedora31
-	podman run -d -p 3301:22 --restart always -h python2_centos7       --name localhost/python2_centos7       localhost/python2_centos7
-	podman run -d -p 3302:22 --restart always -h python2_opensuse15    --name localhost/python2_opensuse15    localhost/python2_opensuse15
-	podman run -d -p 3303:22 --restart always -h python2_oracle_linux7 --name localhost/python2_oracle_linux7 localhost/python2_oracle_linux7
-	podman run -d -p 3304:22 --restart always -h python3_centos8       --name localhost/python3_centos8       localhost/python3_centos8
-	podman run -d -p 3305:22 --restart always -h python3_fedora31      --name localhost/python3_fedora31      localhost/python3_fedora31
-	podman run -d -p 3306:22 --restart always -h python3_ubuntu16      --name localhost/python3_ubuntu16      localhost/python3_ubuntu16
+	podman run -d -p 3301:22 --restart always -h python2_centos7       --name python2_centos7       localhost/python2_centos7
+	podman run -d -p 3302:22 --restart always -h python2_opensuse15    --name python2_opensuse15    localhost/python2_opensuse15
+	podman run -d -p 3303:22 --restart always -h python2_oracle_linux7 --name python2_oracle_linux7 localhost/python2_oracle_linux7
+	podman run -d -p 3304:22 --restart always -h python3_centos8       --name python3_centos8       localhost/python3_centos8
+	podman run -d -p 3305:22 --restart always -h python3_fedora31      --name python3_fedora31      localhost/python3_fedora31
+	podman run -d -p 3306:22 --restart always -h python3_ubuntu16      --name python3_ubuntu16      localhost/python3_ubuntu16
 
 remove:
 	-podman rm  -f localhost/python2_centos7 localhost/python2_opensuse15 localhost/python2_oracle_linux7 localhost/python3_centos8 localhost/python3_fedora31 localhost/python3_ubuntu16
