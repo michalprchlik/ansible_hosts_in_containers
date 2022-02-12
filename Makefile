@@ -21,5 +21,5 @@ run:
 	podman run -d -p 3306:22 --restart always -h python3_ubuntu16      --name python3_ubuntu16      localhost/python3_ubuntu16
 
 remove:
-	-podman rm  -f localhost/python2_centos7 localhost/python2_opensuse15 localhost/python2_oracle_linux7 localhost/python3_centos8 localhost/python3_fedora31 localhost/python3_ubuntu16
+	-podman rm  -f python2_centos7 python2_opensuse15 python2_oracle_linux7 python3_centos8 python3_fedora31 python3_ubuntu16
 	-podman rmi -f localhost/python2_centos7 localhost/python2_opensuse15 localhost/python2_oracle_linux7 localhost/python3_centos8 localhost/python3_fedora31 localhost/python3_ubuntu16
